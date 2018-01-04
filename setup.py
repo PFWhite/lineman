@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 #bring in __version__ from sourcecode
 #per https://stackoverflow.com/a/17626524
@@ -14,7 +14,7 @@ setup(name='lineman',
       author='Patrick White',
       author_email='pfwhite9@gmail.com',
       license='Apache License 2.0',
-      packages=['lineman'],
+      packages=find_packages(),
       entry_points={
           'console_scripts': [
               'lineman = lineman.__main__:cli_run',
