@@ -13,7 +13,7 @@ Options:
 
 import csv
 import json
-import pdb
+import os
 
 from docopt import docopt
 import yaml
@@ -54,6 +54,7 @@ def main(args):
 
     global report
     report = {
+        'input_file': os.path.abspath(args[_file]),
         'records': {
             'num_inputed': 0,
             'num_redcap': 0,
