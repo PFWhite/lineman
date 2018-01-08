@@ -3,8 +3,12 @@ cappy_version: lineman.json
 event_assignment_strategy: chronological
 arm_order: [1]
 token: CDAB7D4C027F135CF12D72FF018BFE95
-redcap_url: http://hcvtargetrc.dev/redcap/api/
+redcap_url: http://redi2.dev/redcap/api/
 subject_id: dm_subjid
+
+# in every case of the HCV project this is used to
+# map the secondary_unique_field to the unique_field
+# defined in the redcap
 check_mappings:
   - key: dm_subjid
     match_against: dm_usubjid
