@@ -22,7 +22,7 @@ setup(name='lineman',
       },
       install_requires=['cappy==1.1.1',
                         'docopt==0.6.2',
-                        'pyyaml==3.12',
+                        'pyyaml==5.4',
                         'python-dateutil==2.6.1'],
       dependency_links=["git+https://github.com/ctsit/cappy@1.1.1#egg=cappy-1.1.1"],
       zip_safe=False)
